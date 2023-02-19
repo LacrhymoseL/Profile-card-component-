@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* primary */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    /* neutral */
+    --Dark-gray: hsl(0, 0%, 59%);
+
+    /* Name and Stats */
+    /* font-size: 18px; */
+
+    --font-family: 'Kumbh Sans', sans-serif;
+    /* font-weight: 400 , 700 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-image: url(./images/bg-pattern-top.svg),
+                      url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat; 
+    background-position: left -30px top -300px , right -50px bottom -375px; 
+    background-size: contain; 
+    background-color: var(--Dark-cyan); 
+}
+
+main {
+    max-width: 350px;
+    margin: 12rem auto;
+    background-color: white;
+    font-family: var(--font-family);
+    background-image: url(./images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: .5rem;
+}
+
+h3 {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+p {
+    color: var(--Dark-gray);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#victor {
+    margin-top: 5.7rem;
+    margin-left: 8rem;
+    border: white 5px solid;
+    border-radius: 50%;
+}
+
+.name {
+    text-align: center;
+    margin-top: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.name span {
+    color: var(--Dark-grayish-blue);
+    font-weight: lighter;
+    margin-left: 5px;
+}
+
+.name p {
+    margin-bottom: 0.9rem;
+}
+
+hr {
+    border-top : 1px solid #e2e9ef
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    place-content: center;
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+.stats p {
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 1rem;
+}
